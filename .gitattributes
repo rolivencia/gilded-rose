@@ -1,0 +1,7 @@
+* text=auto
+
+# Require Windows batch files to use CRLF line endings
+*.bat text eol=crlf
+
+# Treat jar files as binary
+*.jar binary
