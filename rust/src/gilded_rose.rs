@@ -45,7 +45,7 @@ impl GildedRose {
                 if item.name != "Concert Tickets" {
                     if item.quality > 0 {
                         if item.name != "Hammer" {
-                            item.quality = item.quality + 1;
+                            item.quality = item.quality - 1;
                         }
                     }
                 } else {
