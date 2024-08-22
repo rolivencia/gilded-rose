@@ -30,6 +30,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\GildedRoseApp\GildedRose.csproj" />
+    <ProjectReference Include="..\GildedRose\GildedRose.csproj" />
   </ItemGroup>
 </Project>
