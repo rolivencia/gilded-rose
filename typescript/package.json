@@ -1,0 +1,35 @@
+{
+  "name": "gilded-rose-kata",
+  "version": "1.0.0",
+  "description": "Gilded Rose kata in Typescript with ts-jest",
+  "scripts": {
+    "lint": "eslint .",
+    "test": "jest",
+    "test:watch": "jest --watchAll",
+    "test:coverage": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/emilybache/GildedRose-Refactoring-Kata.git"
+  },
+  "keywords": [
+    "kata",
+    "refactor",
+    "gilded-rose"
+  ],
+  "license": "MIT",
+  "private": true,
+  "bugs": {
+    "url": "https://github.com/emilybache/GildedRose-Refactoring-Kata/issues"
+  },
+  "homepage": "https://github.com/emilybache/GildedRose-Refactoring-Kata",
+  "devDependencies": {
+    "@types/jest": "^29.5.14",
+    "eslint": "^8.18.0",
+    "eslint-config-google": "^0.14.0",
+    "ts-jest": "^29.3.2"
+  },
+  "dependencies": {
+    "ts-loader": "^9.5.2"
+  }
+}
