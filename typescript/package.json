@@ -1,7 +1,7 @@
 {
   "name": "gilded-rose-kata",
   "version": "1.0.0",
-  "description": "Gilded Rose kata in JavaScript with Jest",
+  "description": "Gilded Rose kata in Typescript with ts-jest",
   "scripts": {
     "lint": "eslint .",
     "test": "jest",
