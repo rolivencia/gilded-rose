@@ -1,5 +1,6 @@
 import { GildedRose } from '../src/gilded_rose';
 import { Item } from '../src/item';
+import { describe, expect, it } from '@jest/globals';
 
 describe('Gilded Rose', () => {
   describe('Normal Item', () => {
