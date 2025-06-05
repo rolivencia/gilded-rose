@@ -360,4 +360,42 @@ describe('Gilded Rose', () => {
       expect(items[0].quality).toBe(0);
     });
   });
+
+  describe('Milk', () => {
+    it('before sell date', () => {
+       const gildedRose = new GildedRose();
+       const items = [new Item('Milk', 5, 10)];
+
+       gildedRose.processEndOfDay(items);
+      expect(items[0].daysRemaining).toBe(4);
+      expect(items[0].quality).toBe(8);
+     });
+
+   it('before sell date near', () => {
+        const gildedRose = new GildedRose();
+        const items = [new Item('Milk', 1, 12)];
+
+        gildedRose.processEndOfDay(items);
+        expect(items[0].daysRemaining).toBe(0);
+        expect(items[0].quality).toBe(8);
+   });
+
+    fit('in sell date', () => {
+      const gildedRose = new GildedRose();
+      const items = [new Item('Milk', 0, 4)];
+
+      gildedRose.processEndOfDay(items);
+      expect(items[0].daysRemaining).toBe(-1);
+      expect(items[0].quality).toBe(0);
+    });
+
+   it('after sell date quality can never be less than 0', () => {
+     const gildedRose = new GildedRose();
+     const items = [new Item('Milk', -2, 2)];
+
+     gildedRose.processEndOfDay(items);
+     expect(items[0].daysRemaining).toBe(-3);
+     expect(items[0].quality).toBe(0);
+   });
+  })
 });
